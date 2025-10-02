@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran</title>
+  <style>
+    form {
+      width: 400px;
+      margin: auto;
+      padding: 10px;
+      
+    }
+
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      background: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2 align="center">Pendaftaran Pelatihan Web Menggunakan Node JS dan React</h2>
+  <form>
+    <label>Nama Lengkap:</label>
+    <input type="text" name="nama" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>No. Telepon (WhatsApp):</label>
+    <input type="tel" name="telepon" required>
+
+    <label>Jenis Kelamin:</label>
+    <input type="radio" name="jk" value="Pria"> Pria
+    <input type="radio" name="jk" value="Wanita"> Wanita
+
+    <label>Pilih Sesi Pelatihan:</label>
+    <select name="pelatihan">
+      <option>Node.js</option>
+      <option>React</option>
+      <option>Fullstack</option>
+    </select>
+x
+    <label>Sumber Informasi:</label>
+    <input type="checkbox" value="Teman"> Teman
+    <input type="checkbox" value="Media Sosial"> Media Sosial
+    <input type="checkbox" value="Iklan Online"> Iklan Online
+    <input type="checkbox" value="Lainnya"> Lainnya
+
+    <label>Catatan Tambahan:</label>
+    <textarea rows="4"></textarea>
+
+    <button type="submit" class="btn">Daftar Sekarang</button>
+  </form>
+
+  <div style="text-align: center; margin-top: 15px;">
+    <a href="index.html">⬅ Kembali ke Halaman Utama</a>
+  </div>
+</body>
+</html>
